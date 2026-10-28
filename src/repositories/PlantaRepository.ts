@@ -21,7 +21,7 @@ export const findAllPlantas = async (filtros: FiltrosPlanta) => {
         where: {
             luminosidade: filtros.luminosidade,
             petFriendly: filtros.petFriendly,
-            nome: filtros.nome && { contains: filtros.nome, mode: "insensitive" },
+            nome: filtros.nome === undefined ? undefined : { contains: filtros.nome, mode: "insensitive" },
         },
         orderBy: filtros.ordem ? { [filtros.ordem]: "asc" } : { id: "asc" },
     });

@@ -5,7 +5,7 @@ import { FiltrosPlanta } from "@repositories/PlantaRepository";
 // Sem esse limite, um número gigante vira erro 500 em vez de 400.
 const MAX_INT = 2147483647;
 
-type DadosPlanta = {
+export type DadosPlanta = {
   nome: string;
   especie: string;
   preco: number;
