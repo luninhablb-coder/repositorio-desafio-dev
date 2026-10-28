@@ -10,6 +10,8 @@ API de exemplo com um **CRUD de usuários** para o treinamento de back-end dos a
 |---|---|
 | `README.md` (este) | Como rodar o projeto e como o CRUD de usuários funciona |
 | [`DESAFIO.md`](DESAFIO.md) | O enunciado do desafio Folhagem & Cia: o que construir e entregar |
+| [`DOCUMENTACAO.md`](DOCUMENTACAO.md) | Documento da API de plantas: rotas, erros e decisões |
+| [`RELATORIO.md`](RELATORIO.md) | Relatório do desafio: o que foi feito, como, dificuldades e uso de IA |
 
 ---
 
@@ -66,6 +68,7 @@ O `.env` guarda as configurações do projeto e **não vai para o git**. Os valo
 | `docker compose logs -f server` | Mostra os logs da API (é aqui que os erros aparecem) |
 | `docker compose down` | Derruba os containers (os dados do banco continuam salvos) |
 | `yarn migration` | Cria uma migration a partir do `schema.prisma` e aplica no banco |
+| `yarn seed` | Cadastra plantas de exemplo (apaga as plantas que já existem) |
 | `yarn studio` | Abre o Prisma Studio para ver o banco no navegador |
 | `yarn typecheck` | Procura erros de tipo no TypeScript |
 
