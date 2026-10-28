@@ -16,6 +16,7 @@
     "paths": {
       "@controllers/*": ["./src/controllers/*"],
       "@repositories/*": ["./src/repositories/*"],
+      "@validators/*": ["./src/validators/*"],
       "@database": ["./src/database"]
     }
   },
